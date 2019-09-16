@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Dependencies
+      run: bash install_dependencies.sh
+    - name: Create Makefiles
+      run: premake5 gmake
+    - name: make
+      run: make config=release
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck

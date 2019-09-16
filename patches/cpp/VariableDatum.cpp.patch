@@ -101,7 +101,7 @@
 -   marshalSize = marshalSize + 4;  // _variableDatumID
 -   marshalSize = marshalSize + 4;  // _variableDatumLength
 -
--   for(int idx=0; idx < _variableDatums.size(); idx++)
+-   for(size_t idx=0; idx < _variableDatums.size(); idx++)
 -   {
 -        EightByteChunk listElement = _variableDatums[idx];
 -        marshalSize = marshalSize + listElement.getMarshalledSize();

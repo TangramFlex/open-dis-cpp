@@ -290,7 +290,7 @@ int EntityStatePdu::getMarshalledSize() const
    marshalSize = marshalSize + _marking.getMarshalledSize();  // _marking
    marshalSize = marshalSize + 4;  // _capabilities
 
-   for(int idx=0; idx < _articulationParameters.size(); idx++)
+   for(size_t idx=0; idx < _articulationParameters.size(); idx++)
    {
         ArticulationParameter listElement = _articulationParameters[idx];
         marshalSize = marshalSize + listElement.getMarshalledSize();

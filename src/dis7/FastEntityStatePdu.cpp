@@ -720,7 +720,7 @@ int FastEntityStatePdu::getMarshalledSize() const
    marshalSize = marshalSize + 12 * 1;  // _marking
    marshalSize = marshalSize + 4;  // _capabilities
 
-   for(int idx=0; idx < _variableParameters.size(); idx++)
+   for(size_t idx=0; idx < _variableParameters.size(); idx++)
    {
         VariableParameter listElement = _variableParameters[idx];
         marshalSize = marshalSize + listElement.getMarshalledSize();

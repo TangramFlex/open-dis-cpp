@@ -245,7 +245,7 @@ int IntercomControlPdu::getMarshalledSize() const
    marshalSize = marshalSize + 2;  // _masterCommunicationsDeviceID
    marshalSize = marshalSize + 4;  // _intercomParametersLength
 
-   for(int idx=0; idx < _intercomParameters.size(); idx++)
+   for(size_t idx=0; idx < _intercomParameters.size(); idx++)
    {
         IntercomCommunicationsParameters listElement = _intercomParameters[idx];
         marshalSize = marshalSize + listElement.getMarshalledSize();

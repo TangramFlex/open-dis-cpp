@@ -236,7 +236,7 @@ void EntityStatePdu::unmarshal(DataStream& dataStream)
     dataStream >> _capabilities;
 
      _articulationParameters.clear();
-     for(size_t idx = 0; idx < _numberOfArticulationParameters; idx++)
+     for(int8_t idx = 0; idx < _numberOfArticulationParameters; idx++)
      {
         ArticulationParameter x;
         x.unmarshal(dataStream);

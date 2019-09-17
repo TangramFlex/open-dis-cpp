@@ -47,30 +47,20 @@ namespace DIS
       void SetStream(const char* buffer, size_t length, Endian order);
 
       // write operations
-      DataStream& operator <<(bool c);
-      DataStream& operator <<(char c);
-      DataStream& operator <<(uint8_t c);
-      DataStream& operator <<(float c);
-      DataStream& operator <<(double c);
-      DataStream& operator <<(int c);
-      DataStream& operator <<(unsigned int c);
-      DataStream& operator <<(long c);
-      DataStream& operator <<(unsigned long c);
-      DataStream& operator <<(unsigned short c);
-      DataStream& operator <<(short c);
+      template<typename T>
+      DataStream& operator <<(T t)
+      {
+         WriteAlgorithm( t );
+         return *this;
+      }
 
       // read operations
-      DataStream& operator >>(bool& c);
-      DataStream& operator >>(char& c);
-      DataStream& operator >>(uint8_t& c);
-      DataStream& operator >>(float& c);
-      DataStream& operator >>(double& c);
-      DataStream& operator >>(int& c);
-      DataStream& operator >>(unsigned int& c);
-      DataStream& operator >>(long& c);
-      DataStream& operator >>(unsigned long& c);
-      DataStream& operator >>(unsigned short& c);
-      DataStream& operator >>(short& c);
+      template<typename T>
+      DataStream& operator >>(T& t)
+      {
+         ReadAlgorithm( t );
+         return *this;
+      }
 
       Endian GetStreamEndian() const;
       Endian GetMachineEndian() const;

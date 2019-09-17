@@ -105,7 +105,7 @@ void SignalPdu::unmarshal(DataStream& dataStream)
     dataStream >> _samples;
 
      _data.clear();
-     for(size_t idx = 0; idx < _dataLength; idx++)
+     for(short idx = 0; idx < _dataLength; idx++)
      {
         OneByteChunk x;
         x.unmarshal(dataStream);

@@ -64,22 +64,22 @@ void ArealObjectStatePdu::setUpdateNumber(unsigned short pX)
     _updateNumber = pX;
 }
 
-unsigned char ArealObjectStatePdu::getForceID() const
+uint8_t ArealObjectStatePdu::getForceID() const
 {
     return _forceID;
 }
 
-void ArealObjectStatePdu::setForceID(unsigned char pX)
+void ArealObjectStatePdu::setForceID(uint8_t pX)
 {
     _forceID = pX;
 }
 
-unsigned char ArealObjectStatePdu::getModifications() const
+uint8_t ArealObjectStatePdu::getModifications() const
 {
     return _modifications;
 }
 
-void ArealObjectStatePdu::setModifications(unsigned char pX)
+void ArealObjectStatePdu::setModifications(uint8_t pX)
 {
     _modifications = pX;
 }

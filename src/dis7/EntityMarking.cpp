@@ -20,12 +20,12 @@ EntityMarking::~EntityMarking()
 {
 }
 
-unsigned char EntityMarking::getCharacterSet() const
+uint8_t EntityMarking::getCharacterSet() const
 {
     return _characterSet;
 }
 
-void EntityMarking::setCharacterSet(unsigned char pX)
+void EntityMarking::setCharacterSet(uint8_t pX)
 {
     _characterSet = pX;
 }

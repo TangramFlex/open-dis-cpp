@@ -20,12 +20,12 @@ Marking::~Marking()
 {
 }
 
-unsigned char Marking::getCharacterSet() const
+uint8_t Marking::getCharacterSet() const
 {
     return _characterSet;
 }
 
-void Marking::setCharacterSet(unsigned char pX)
+void Marking::setCharacterSet(uint8_t pX)
 {
     _characterSet = pX;
 }

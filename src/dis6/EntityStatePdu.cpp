@@ -40,12 +40,12 @@ void EntityStatePdu::setEntityID(const EntityID &pX)
     _entityID = pX;
 }
 
-unsigned char EntityStatePdu::getForceId() const
+uint8_t EntityStatePdu::getForceId() const
 {
     return _forceId;
 }
 
-void EntityStatePdu::setForceId(unsigned char pX)
+void EntityStatePdu::setForceId(uint8_t pX)
 {
     _forceId = pX;
 }

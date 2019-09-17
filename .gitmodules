@@ -1,0 +1,3 @@
+[submodule "src/Enumerations"]
+	path = src/Enumerations
+	url = git@github.com:open-dis/Enumerations.git

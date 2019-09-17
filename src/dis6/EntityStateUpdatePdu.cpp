@@ -46,7 +46,7 @@ void EntityStateUpdatePdu::setPadding1(char pX)
     _padding1 = pX;
 }
 
-unsigned char EntityStateUpdatePdu::getNumberOfArticulationParameters() const
+uint8_t EntityStateUpdatePdu::getNumberOfArticulationParameters() const
 {
    return _articulationParameters.size();
 }
@@ -126,7 +126,7 @@ void EntityStateUpdatePdu::marshal(DataStream& dataStream) const
     EntityInformationFamilyPdu::marshal(dataStream); // Marshal information in superclass first
     _entityID.marshal(dataStream);
     dataStream << _padding1;
-    dataStream << ( unsigned char )_articulationParameters.size();
+    dataStream << ( uint8_t )_articulationParameters.size();
     _entityLinearVelocity.marshal(dataStream);
     _entityLocation.marshal(dataStream);
     _entityOrientation.marshal(dataStream);

@@ -60,22 +60,22 @@ void TransferControlRequestPdu::setRequestID(unsigned int pX)
     _requestID = pX;
 }
 
-unsigned char TransferControlRequestPdu::getRequiredReliabilityService() const
+uint8_t TransferControlRequestPdu::getRequiredReliabilityService() const
 {
     return _requiredReliabilityService;
 }
 
-void TransferControlRequestPdu::setRequiredReliabilityService(unsigned char pX)
+void TransferControlRequestPdu::setRequiredReliabilityService(uint8_t pX)
 {
     _requiredReliabilityService = pX;
 }
 
-unsigned char TransferControlRequestPdu::getTranferType() const
+uint8_t TransferControlRequestPdu::getTranferType() const
 {
     return _tranferType;
 }
 
-void TransferControlRequestPdu::setTranferType(unsigned char pX)
+void TransferControlRequestPdu::setTranferType(uint8_t pX)
 {
     _tranferType = pX;
 }
@@ -95,7 +95,7 @@ void TransferControlRequestPdu::setTransferEntityID(const EntityID &pX)
     _transferEntityID = pX;
 }
 
-unsigned char TransferControlRequestPdu::getNumberOfRecordSets() const
+uint8_t TransferControlRequestPdu::getNumberOfRecordSets() const
 {
    return _recordSets.size();
 }
@@ -124,7 +124,7 @@ void TransferControlRequestPdu::marshal(DataStream& dataStream) const
     dataStream << _requiredReliabilityService;
     dataStream << _tranferType;
     _transferEntityID.marshal(dataStream);
-    dataStream << ( unsigned char )_recordSets.size();
+    dataStream << ( uint8_t )_recordSets.size();
 
      for(size_t idx = 0; idx < _recordSets.size(); idx++)
      {

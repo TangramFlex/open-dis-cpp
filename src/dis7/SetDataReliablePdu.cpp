@@ -20,12 +20,12 @@ SetDataReliablePdu::~SetDataReliablePdu()
     _variableDatumRecords.clear();
 }
 
-unsigned char SetDataReliablePdu::getRequiredReliabilityService() const
+uint8_t SetDataReliablePdu::getRequiredReliabilityService() const
 {
     return _requiredReliabilityService;
 }
 
-void SetDataReliablePdu::setRequiredReliabilityService(unsigned char pX)
+void SetDataReliablePdu::setRequiredReliabilityService(uint8_t pX)
 {
     _requiredReliabilityService = pX;
 }
@@ -40,12 +40,12 @@ void SetDataReliablePdu::setPad1(unsigned short pX)
     _pad1 = pX;
 }
 
-unsigned char SetDataReliablePdu::getPad2() const
+uint8_t SetDataReliablePdu::getPad2() const
 {
     return _pad2;
 }
 
-void SetDataReliablePdu::setPad2(unsigned char pX)
+void SetDataReliablePdu::setPad2(uint8_t pX)
 {
     _pad2 = pX;
 }

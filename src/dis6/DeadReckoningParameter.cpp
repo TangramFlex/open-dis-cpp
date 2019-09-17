@@ -20,12 +20,12 @@ DeadReckoningParameter::~DeadReckoningParameter()
 {
 }
 
-unsigned char DeadReckoningParameter::getDeadReckoningAlgorithm() const
+uint8_t DeadReckoningParameter::getDeadReckoningAlgorithm() const
 {
     return _deadReckoningAlgorithm;
 }
 
-void DeadReckoningParameter::setDeadReckoningAlgorithm(unsigned char pX)
+void DeadReckoningParameter::setDeadReckoningAlgorithm(uint8_t pX)
 {
     _deadReckoningAlgorithm = pX;
 }

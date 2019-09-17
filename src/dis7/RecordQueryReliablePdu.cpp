@@ -30,12 +30,12 @@ void RecordQueryReliablePdu::setRequestID(unsigned int pX)
     _requestID = pX;
 }
 
-unsigned char RecordQueryReliablePdu::getRequiredReliabilityService() const
+uint8_t RecordQueryReliablePdu::getRequiredReliabilityService() const
 {
     return _requiredReliabilityService;
 }
 
-void RecordQueryReliablePdu::setRequiredReliabilityService(unsigned char pX)
+void RecordQueryReliablePdu::setRequiredReliabilityService(uint8_t pX)
 {
     _requiredReliabilityService = pX;
 }
@@ -50,12 +50,12 @@ void RecordQueryReliablePdu::setPad1(unsigned short pX)
     _pad1 = pX;
 }
 
-unsigned char RecordQueryReliablePdu::getPad2() const
+uint8_t RecordQueryReliablePdu::getPad2() const
 {
     return _pad2;
 }
 
-void RecordQueryReliablePdu::setPad2(unsigned char pX)
+void RecordQueryReliablePdu::setPad2(uint8_t pX)
 {
     _pad2 = pX;
 }

@@ -5,7 +5,7 @@
 #ifndef _dcl_dis_data_stream_h_
 #define _dcl_dis_data_stream_h_
 
-// the class member, DataStream::BufferType is causing warnign 4251.
+// the class member, DataStream::BufferType is causing warning 4251.
 // disable it until a proper fix is found, as instructed from the enlightening article:
 // http://www.unknownroad.com/rtfm/VisualStudio/warningC4251.html
 #if _MSC_VER
@@ -49,7 +49,7 @@ namespace DIS
       // write operations
       DataStream& operator <<(bool c);
       DataStream& operator <<(char c);
-      DataStream& operator <<(unsigned char c);
+      DataStream& operator <<(uint8_t c);
       DataStream& operator <<(float c);
       DataStream& operator <<(double c);
       DataStream& operator <<(int c);
@@ -62,7 +62,7 @@ namespace DIS
       // read operations
       DataStream& operator >>(bool& c);
       DataStream& operator >>(char& c);
-      DataStream& operator >>(unsigned char& c);
+      DataStream& operator >>(uint8_t& c);
       DataStream& operator >>(float& c);
       DataStream& operator >>(double& c);
       DataStream& operator >>(int& c);

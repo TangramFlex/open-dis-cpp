@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 
    Example::EntityStatePduProcessor processor;
 
-   const unsigned char es_pdu_type = 1;
+   const uint8_t es_pdu_type = 1;
    DIS::IncomingMessage incoming;
    incoming.AddProcessor( es_pdu_type , &processor );
    while( true )

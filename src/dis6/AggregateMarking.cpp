@@ -18,12 +18,12 @@ AggregateMarking::~AggregateMarking()
 {
 }
 
-unsigned char AggregateMarking::getCharacterSet() const
+uint8_t AggregateMarking::getCharacterSet() const
 {
     return _characterSet;
 }
 
-void AggregateMarking::setCharacterSet(unsigned char pX)
+void AggregateMarking::setCharacterSet(uint8_t pX)
 {
     _characterSet = pX;
 }

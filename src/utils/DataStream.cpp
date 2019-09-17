@@ -168,7 +168,7 @@ DataStream& DataStream::operator <<(char c)
    return *this;
 }
 
-DataStream& DataStream::operator <<(unsigned char c)
+DataStream& DataStream::operator <<(uint8_t c)
 {
    WriteAlgorithm( c );
    return *this;
@@ -229,7 +229,7 @@ DataStream& DataStream::operator >>(char& c)
    return *this;
 }
 
-DataStream& DataStream::operator >>(unsigned char& c)
+DataStream& DataStream::operator >>(uint8_t& c)
 {
    ReadAlgorithm( c );
    return *this;

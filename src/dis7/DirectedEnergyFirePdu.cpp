@@ -153,12 +153,12 @@ void DirectedEnergyFirePdu::setPulseShape(char pX)
     _pulseShape = pX;
 }
 
-unsigned char DirectedEnergyFirePdu::getPadding1() const
+uint8_t DirectedEnergyFirePdu::getPadding1() const
 {
     return _padding1;
 }
 
-void DirectedEnergyFirePdu::setPadding1(unsigned char pX)
+void DirectedEnergyFirePdu::setPadding1(uint8_t pX)
 {
     _padding1 = pX;
 }

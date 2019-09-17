@@ -15,7 +15,3 @@ jobs:
       run: ~/premake5 gmake
     - name: make
       run: make OpenDIS config=release
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck

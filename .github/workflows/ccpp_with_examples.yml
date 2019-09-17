@@ -13,6 +13,8 @@ jobs:
       run: bash install_premake5.sh
     - name: Create Makefiles
       run: premake5 gmake
+    - name: Install SDL
+      run: bash install_SDL.sh
     - name: make
       run: make OpenDIS config=release
     - name: make check

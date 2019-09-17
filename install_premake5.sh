@@ -8,4 +8,4 @@ make -j8 config=release
 cd ../../..
 ls premake-5.0.0-alpha6/bin/release;
 echo $PATH
-mv premake-5.0.0-alpha6/bin/release/premake5 usr/local/bin/premake5 # Move premake5 to lib dir
+mv premake-5.0.0-alpha6/bin/release/premake5 usr/local/bin/ # Move premake5 to lib dir

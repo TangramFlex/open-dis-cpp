@@ -646,7 +646,7 @@ bool FastEntityStatePdu::operator ==(const FastEntityStatePdu& rhs) const
      if( ! (_entityAppearance == rhs._entityAppearance) ) ivarsEqual = false;
      if( ! (_deadReckoningAlgorithm == rhs._deadReckoningAlgorithm) ) ivarsEqual = false;
 
-     for(char idx = 0; idx < 15; idx++)
+     for(uint8_t idx = 0; idx < 15; idx++)
      {
           if(!(_otherParameters[idx] == rhs._otherParameters[idx]) ) ivarsEqual = false;
      }
@@ -658,7 +658,7 @@ bool FastEntityStatePdu::operator ==(const FastEntityStatePdu& rhs) const
      if( ! (_yAngularVelocity == rhs._yAngularVelocity) ) ivarsEqual = false;
      if( ! (_zAngularVelocity == rhs._zAngularVelocity) ) ivarsEqual = false;
 
-     for(char idx = 0; idx < 12; idx++)
+     for(uint8_t idx = 0; idx < 12; idx++)
      {
           if(!(_marking[idx] == rhs._marking[idx]) ) ivarsEqual = false;
      }

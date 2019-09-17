@@ -32,7 +32,7 @@ protected:
   uint8_t _forceId; 
 
   /** How many variable (nee articulation) parameters are in the variable length list */
-  char _numberOfVariableParameters; 
+  int8_t _numberOfVariableParameters; 
 
   /** Kind of entity */
   uint8_t _entityKind; 

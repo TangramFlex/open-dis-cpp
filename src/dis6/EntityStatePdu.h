@@ -34,7 +34,7 @@ protected:
   uint8_t _forceId; 
 
   /** How many articulation parameters are in the variable length list */
-  char _numberOfArticulationParameters; 
+  int8_t _numberOfArticulationParameters;
 
   /** Describes the type of entity in the world */
   EntityType _entityType; 

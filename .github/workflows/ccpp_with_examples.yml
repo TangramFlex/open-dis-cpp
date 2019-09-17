@@ -12,7 +12,7 @@ jobs:
     - name: Install Premake5
       run: bash install_premake5.sh
     - name: Create Makefiles
-      run: premake5 gmake
+      run: ~/premake5 gmake
     - name: Install SDL
       run: bash install_SDL.sh
     - name: make

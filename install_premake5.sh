@@ -6,5 +6,4 @@ unzip premake.zip
 cd premake-5.0.0-alpha6/build/gmake.unix
 make -j8 config=release
 cd ../../..
-mkdir -p /usr/local/bin
-mv premake-5.0.0-alpha6/bin/release/premake5 /usr/local/bin/premake5 # Move premake5 to lib dir
+mv premake-5.0.0-alpha6/bin/release/premake5 ~/premake5 # Move premake5 to lib dir

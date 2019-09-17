@@ -12,7 +12,7 @@ jobs:
     - name: Install Premake5
       run: bash install_premake5.sh
     - name: Create Makefiles
-      run: premake5 gmake
+      run: ~/premake5 gmake
     - name: make
       run: make OpenDIS config=release
     - name: make check
